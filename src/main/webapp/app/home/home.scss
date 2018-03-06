@@ -1,0 +1,55 @@
+
+/* ==========================================================================
+Main page styles
+========================================================================== */
+h1 {
+    text-align: center;
+	color: #ffffff;
+    text-shadow: 1px 1px #99ff66;
+}
+ul {
+	text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hipster {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width: 1600px;
+    height: 400px;
+    background: url("../../content/images/hipsterrr.png") no-repeat center top;
+    background-size: contain;
+    color:#f2f;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 3s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	10% { opacity: 1; } 
+	25% { opacity: .1; } 
+	30% { opacity: 1; } 
+	80% { opacity: 1; } 
+	85% { opacity: .1; } 
+	90% { opacity: 1; } 
+	100% { opacity: 1; }
+}
+/* wait autoprefixer update to allow simple generation of high pixel density media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .hipster {
+        background: url("../../content/images/hipster2x.png") no-repeat center top;
+        background-size: contain;
+    }
+}

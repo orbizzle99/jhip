@@ -1,0 +1,26 @@
+<title>Mario Flavall</title>
+<span class="hipster img-fluid rounded"></span>
+<div>
+    <div>
+        <h1>Mario Flavall</h1>
+
+        <div [ngSwitch]="isAuthenticated()">
+            <div class="alert alert-success" *ngSwitchCase="true">
+                <span *ngIf="account"
+                   > You are logged in as user "{{account.login}}". </span>
+            </div>
+
+           
+        </div>
+
+      
+        <div class = "testul">
+            <ul>
+            
+                <li><a href="https://drive.google.com/open?id=18a9gE0SV0vh81OEDWxhChyg_iHNiCV2V">CV</a></li>
+                <li><a href="https://drive.google.com/open?id=1VvCpGpYCFl6eaWxn7QWPZ55R3SjZkrqG">Cover Letter</a></li>
+                <li><a href="https://www.linkedin.com/in/mario-flavall-961633154/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
